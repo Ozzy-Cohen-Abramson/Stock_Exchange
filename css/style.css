@@ -2,9 +2,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: hsl(0, 0%, 91%);
 }
 
-.page-wrapper {
+.container {
   width: 80vw;
   margin-top: 60px;
   display: flex;
@@ -15,9 +16,18 @@ body {
 
 .search-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+}
+
+.chart-spinner-wrapper {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* margin-top: 50px; */
+  /* width: 95%; */
+  text-align: center;
 }
 
 input {
@@ -38,8 +48,79 @@ button {
   margin-top: 150px;
 }
 
+li {
+  min-width: 500px;
+}
+
 li:hover {
   color: #0d6efd;
   transition: all 0.3s ease;
   cursor: pointer;
+}
+
+/* company profile */
+
+.company-card {
+  background-color: rgb(255, 255, 255);
+  padding: 30px 40px 50px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 0px #c5c5c5;
+  max-width: 700px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+#company-profile-img {
+  padding-right: 15px;
+}
+
+#company-name {
+  font-size: 20px;
+  color: #888888;
+  font-family: "Bebas Neue", cursive;
+}
+
+#stock-container {
+  display: flex;
+}
+
+#stock-price {
+  padding-right: 15px;
+}
+
+a:link {
+  color: #888888;
+  text-decoration: none;
+}
+
+#company-link:hover {
+  border: 2px solid aliceblue;
+  background-color: #e4e4e4;
+  color: aliceblue;
+}
+
+#company-link {
+  text-align: center;
+  border: 2px solid #888888;
+  border-radius: 5px;
+  margin: 40px 130px 0;
+  padding: 5px 0;
+  transition: all 0.3s ease;
+}
+
+#chart-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#myChart {
+  display: none;
 }
